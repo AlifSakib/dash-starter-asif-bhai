@@ -7,10 +7,8 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) => {
     return getDefaultMiddleware({
       serializableCheck: false,
-    });
+    }).concat(baseApi.middleware);
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(baseApi.middleware),
 
   devTools: process.env.NODE_ENV !== "production",
 });

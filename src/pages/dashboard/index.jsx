@@ -5,7 +5,7 @@ import CompanyTable from "../../components/partials/Table/company-table";
 const Dashboard = () => {
   return (
     <div>
-      <Card title="Starter Kit">Your Dashboard</Card>
+      <Card title="Starter Kit"></Card>
     </div>
   );
 };
